@@ -244,7 +244,7 @@
       <HintPath>packages\Zeepkist.GameLibs.16.40.0\lib\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Zeepkist.GameLibs.16.40.0\lib\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>libs\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Zeepkist.GameLibs.16.40.0\lib\UnityEngine.CrashReportingModule.dll</HintPath>
@@ -460,7 +460,7 @@
       <HintPath>packages\Zeepkist.GameLibs.16.40.0\lib\Zeepkist.dll</HintPath>
     </Reference>
     <Reference Include="ZeepkistNetworking, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Zeepkist.GameLibs.16.40.0\lib\ZeepkistNetworking.dll</HintPath>
+      <HintPath>libs\ZeepkistNetworking.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -485,6 +485,9 @@
     <Compile Include="HandshakeResponsePacket.cs" />
     <Compile Include="IPacket.cs" />
     <Compile Include="PacketUtility.cs" />
+    <Compile Include="PermissionTableRequest.cs" />
+    <Compile Include="PermissionTableResponse.cs" />
+    <Compile Include="PermissionTableSubmit.cs" />
     <Compile Include="PlayerJoinPacket.cs" />
     <Compile Include="PlayerLeftPacket.cs" />
     <Compile Include="PlayerStatePacket.cs" />
@@ -496,6 +499,9 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="libs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
