@@ -484,6 +484,9 @@
     <Compile Include="HandshakeRequestPacket.cs" />
     <Compile Include="HandshakeResponsePacket.cs" />
     <Compile Include="IPacket.cs" />
+    <Compile Include="LevelDirectoryRequestPacket.cs" />
+    <Compile Include="LevelDirectoryResponsePacket.cs" />
+    <Compile Include="LoadLevelRequestPacket.cs" />
     <Compile Include="PacketUtility.cs" />
     <Compile Include="PermissionTableRequest.cs" />
     <Compile Include="PermissionTableResponse.cs" />
@@ -492,6 +495,10 @@
     <Compile Include="PlayerLeftPacket.cs" />
     <Compile Include="PlayerStatePacket.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveConfigurationRequestPacket.cs" />
+    <Compile Include="SaveConfigurationResponsePacket.cs" />
+    <Compile Include="SaveConfigurationSubmitPacket.cs" />
+    <Compile Include="SaveCurrentStatePacket.cs" />
     <Compile Include="ServerRulesRequestPacket.cs" />
     <Compile Include="ServerRulesResponsePacket.cs" />
     <Compile Include="StringExtensions.cs" />
