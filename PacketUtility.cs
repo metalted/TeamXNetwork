@@ -17,17 +17,11 @@ namespace TeamXNetwork
         /// </summary>
         public static void AutoRegisterPacketsInSameNamespace()
         {
-            string targetNamespace = typeof(PacketUtility).Namespace;
-
             var packetInterface = typeof(IPacket);
 
-            var packetTypes = AppDomain.CurrentDomain
-                                       .GetAssemblies()
-                                       .SelectMany(a => a.GetTypes())
-                                       .Where(t => t.Namespace != null &&
-                                                   t.Namespace == targetNamespace &&
-                                                   packetInterface.IsAssignableFrom(t) &&
-                                                   t.IsValueType);
+            var packetTypes = typeof(PacketUtility).Assembly
+                                       .GetTypes()
+                                       .Where(t => packetInterface.IsAssignableFrom(t) && t.IsValueType);
 
             foreach (var type in packetTypes)
             {
