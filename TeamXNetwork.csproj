@@ -466,6 +466,8 @@
   <ItemGroup>
     <Compile Include="AccessDeniedPacket.cs" />
     <Compile Include="AccessGrantedPacket.cs" />
+    <Compile Include="ChatMessagePacket.cs" />
+    <Compile Include="CustomMessagePacket.cs" />
     <Compile Include="EditorBlockCreateDeniedPacket.cs" />
     <Compile Include="EditorBlockCreatePacket.cs" />
     <Compile Include="EditorBlockDestroyDeniedPacket.cs" />
@@ -483,6 +485,7 @@
     <Compile Include="EditorStateResponsePacket.cs" />
     <Compile Include="HandshakeRequestPacket.cs" />
     <Compile Include="HandshakeResponsePacket.cs" />
+    <Compile Include="HornPacket.cs" />
     <Compile Include="IPacket.cs" />
     <Compile Include="LevelDirectoryRequestPacket.cs" />
     <Compile Include="LevelDirectoryResponsePacket.cs" />
